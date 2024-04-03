@@ -127,7 +127,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: .5rem 0 .1rem 1rem;
-
+    z-index: 10;
 }
 .stiky-nav-icon{
     background-color: #121212;
@@ -172,11 +172,126 @@ a{
         display: none;
     }
 }
-.music-player{
+.main-content{
     background-color: #121212;
+}
+.card, .card p {
+    background-color: #232323;
+}
+.cards h2{
+    background-color:  #121212;
+    padding : 1rem 0 0rem 1rem;
+     
+}
+.card{
+    width: 9.8rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1.2rem;
+
+}
+.card img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.card-title{
+    font-weight: 700;
+    padding: .4rem;
+}
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #121212;
+    /* padding: 2rem; */
+}
+.card-info{
+    font-size: .8rem;
+    opacity: .8;
+    padding: .4rem;
+}
+.music-player{
     position: fixed;
     bottom:0;
-    width: 99.7%;
+    width: 100%;
     height: 4.6rem;
-    border:2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+ 
+}
+.footer{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #121212;
+}
+.line{
+    width: 90%;
+    border-top: 1px solid white;
+    height: 30%;
+    background-color: #121212;
+    opacity: .5;
+}
+.album{
+    width: 19rem;
+    background-color: antiquewhite;
+    z-index: 3;
+}
+.player{
+    width: 38rem;
+    background-color: aqua;
+    z-index: 2;
+ 
+}
+.controls{
+    width: 19rem;
+    background-color: blue;
+}
+
+.player-content-icon{
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:1.5rem;
+    opacity: 0.7;
+    transition: .1s;
+    
+}
+.player-content-icon:hover{
+    opacity: 1;
+}
+.player-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: .3rem;
+    border-radius: 100px;
+    appearance: none;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 9rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+    z-index: 1000;
+    position: static;
+
 }
